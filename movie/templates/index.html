@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <link rel="stylesheet" href="{% static './css/bootstrap.css' %}">
+    </head>
+    <body>
+        <h1 class="ms-5">Movie List</h1>
+        <div class = "container">
+            <ul class = "list-unstyled ms-0 fs-4">
+                <li ><a href="{% url 'killer' %} " class="text-decoration-none">The Killer</a> </li>
+                <li><a href="{% url 'haunt' %}" class="text-decoration-none">A Haunting in Venice</a> </li>
+                <li><a href="{% url 'world' %}" class="text-decoration-none">Leave the World Behind</a></li>
+                <li><a href="{% url 'reptile' %} " class="text-decoration-none">Reptile</a> </li>
+                <li><a href="{% url 'tetris' %} " class="text-decoration-none">Tetris</a> </li>
+                <li><a href="{% url 'plane' %} " class="text-decoration-none">Plane</a> </li>
+            </ul>
+        </div>
+        <script src="{% static './js/bootstrap.bundle.js' %}">  </script>
+    </body>
+</html>
